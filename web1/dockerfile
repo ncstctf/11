@@ -1,0 +1,7 @@
+FROM tutum/lamp
+
+LABEL Author="yjy"
+
+COPY ./files/ /var/www/html/
+
+RUN chmod -R 755 /var/www/html/
